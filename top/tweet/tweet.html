@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>つぶやき</title>
+    <script>
+        function displayDate() {
+          const today = new Date();
+          const year = today.getFullYear();
+          const month = today.getMonth() + 1;
+          const day = today.getDate();
+          document.getElementById("dateDisplay").innerText = `${year}年${month}月${day}日${hours}時間${minutes}分`;
+        }
+        
+        window.onload = displayDate;
+        </script>
+</head>
+<body>
+    <ul>2024-06-23 11:18
+       <li>プロテインは甘酒で割るととても美味しいことに気が付いた。</li>
+    </ul>
+<br>
+<p><button type="button" onclick="history.back()">戻る</button></p>
+</body>
+</html>
